@@ -1,2 +1,2 @@
 # wepes-grind-university
-Website for WU
+Website for WGU
