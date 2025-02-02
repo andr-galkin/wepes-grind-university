@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: white;
+   /*cursor: none;*/
+   /*user-select: none;*/
+}
+
+@layer components {
+  h1 {
+    @apply xs:text-h1-xs sm:text-h1-sm-md md:text-h1-sm-md lg:text-h1-lg xl:text-h1-xl ul:text-h1-ul;
+  }
+  h2 {
+    @apply xs:text-h2-xs sm:text-h2-sm md:text-h2-md lg:text-h2-lg xl:text-h2-xl ul:text-h2-ul;
+  }
+  h3 {
+    @apply xs:text-h3-xs sm:text-h3-sm md:text-h3-md lg:text-h3-lg xl:text-h3-xl ul:text-h3-ul;
+  }
+  h4 {
+    @apply xs:text-h4-xs sm:text-h4-sm md:text-h4-md lg:text-h4-lg xl:text-h4-xl ul:text-h4-ul;
+  }
+  h5{
+    @apply xs:text-h5-xs sm:text-h5-sm md:text-h5-md lg:text-h5-lg xl:text-h5-xl ul:text-h5-ul;
+  }
+  h6 {
+    @apply xs:text-h6-xs sm:text-h6-sm md:text-h6-md lg:text-h6-lg xl:text-h6-xl ul:text-h6-ul;
+  }
+}
