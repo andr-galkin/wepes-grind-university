@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
-import Navigation from '@/app/components/Navigation/Navigation'
-import { shopItems } from '@/mockData/mockData'
 import Image from 'next/image'
-import BodyText from '@/app/components/Text/BodyText'
-import SizesTable from '@/app/components/SizesTable/SizesTable'
+import { shopItems } from '../../../mockData/mockData'
+import Navigation from '../../components/Navigation/Navigation'
+import BodyText from '../../components/Text/BodyText'
+import SizesTable from '../../components/SizesTable/SizesTable'
 
 const Page = ({ params }: { params: { itemId: string } }) => {
     const detailedItem = shopItems.filter(item => item.id === params.itemId)[0]

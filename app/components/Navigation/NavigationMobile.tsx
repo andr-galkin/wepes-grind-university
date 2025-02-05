@@ -3,11 +3,11 @@
 import React, { useCallback, useState } from 'react'
 import Link from 'next/link'
 import { cubicBezier, motion } from 'framer-motion'
-import { IconList } from '@/app/components/Icons'
 import { Ballet } from 'next/font/google'
-import BodyText from '@/app/components/Text/BodyText'
-import { NavigationProps } from '@/app/components/Navigation/Navigation'
 import Hamburger from 'hamburger-react'
+import { NavigationProps } from './Navigation'
+import { IconList } from '../Icons'
+import BodyText from '../Text/BodyText'
 
 const ballet = Ballet({
     subsets: ['latin'],

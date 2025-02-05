@@ -1,13 +1,13 @@
 'use client'
 
-import Navigation from '@/app/components/Navigation/Navigation'
 import React, { useEffect, useState } from 'react'
 import { AnimatePresence, cubicBezier, motion } from 'framer-motion'
 import Image from 'next/image'
-import DisplayText from '@/app/components/Text/DisplayText'
 import { Ballet } from 'next/font/google'
-import { IconList } from '@/app/components/Icons'
-import BodyText from '@/app/components/Text/BodyText'
+import { IconList } from './components/Icons'
+import Navigation from './components/Navigation/Navigation'
+import DisplayText from './components/Text/DisplayText'
+import BodyText from './components/Text/BodyText'
 
 const ballet = Ballet({
     subsets: ['latin'],

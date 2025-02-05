@@ -4,8 +4,8 @@ import React, { useCallback, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, PanInfo } from 'framer-motion'
-import { IconList } from '@/app/components/Icons'
-import BodyText from '@/app/components/Text/BodyText'
+import { IconList } from '../Icons'
+import BodyText from '../Text/BodyText'
 
 interface ShopItemProps {
     item: {

@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import BodyText from '@/app/components/Text/BodyText'
+import BodyText from '../Text/BodyText'
 
 const SizesTable: React.FC = ({}) => {
     return (

@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import Navigation from '@/app/components/Navigation/Navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Navigation from '../components/Navigation/Navigation'
 
 const Page: React.FC = ({}) => {
     return (

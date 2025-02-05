@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import { shopItems } from '@/mockData/mockData'
-import ShopItem from '@/app/components/ShopList/ShopItem'
+import { shopItems } from '../../../mockData/mockData'
+import ShopItem from './ShopItem'
 
 const ShopList: React.FC = ({}) => {
     return (

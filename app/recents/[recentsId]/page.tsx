@@ -3,9 +3,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { IconList } from '@/app/components/Icons'
-import { formatString } from '@/functions/formatString'
 import Image from 'next/image'
+import { formatString } from '../../../functions/formatString'
+import { IconList } from '../../components/Icons'
 
 let animationFrameId: number
 

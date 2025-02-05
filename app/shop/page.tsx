@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import Navigation from '@/app/components/Navigation/Navigation'
-import ShopList from '@/app/components/ShopList/ShopList'
+import Navigation from '../components/Navigation/Navigation'
+import ShopList from '../components/ShopList/ShopList'
 
 const Page: React.FC = ({}) => {
     return (

@@ -1,10 +1,10 @@
 import React from 'react'
-import Logo from '@/app/components/Icons/Logo'
-import ArrowForward from '@/app/components/Icons/ArrowForward'
-import ArrowOutward from '@/app/components/Icons/ArrowOutward'
-import Instagram from '@/app/components/Icons/Instagram'
-import Telegram from '@/app/components/Icons/Telegram'
-import AnimatedLogo from '@/app/components/Icons/AnimatedLogo'
+import Logo from './Logo'
+import ArrowForward from './ArrowForward'
+import ArrowOutward from './ArrowOutward'
+import Instagram from './Instagram'
+import Telegram from './Telegram'
+import AnimatedLogo from './AnimatedLogo'
 
 export interface IconComponent {
     color?: string

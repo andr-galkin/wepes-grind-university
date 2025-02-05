@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import Navigation from '@/app/components/Navigation/Navigation'
-import BodyText from '@/app/components/Text/BodyText'
 import { Ballet } from 'next/font/google'
+import Navigation from '../components/Navigation/Navigation'
+import BodyText from '../components/Text/BodyText'
 
 const ballet = Ballet({
     subsets: ['latin'],
