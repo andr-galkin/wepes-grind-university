@@ -97,7 +97,7 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                     </Link>
                 </div>
             </div>
-            <div className="overflow-x-hidden z-20 relative h-[50rem] mt-20">
+            <div className="overflow-x-hidden z-20 relative h-[50rem] xs:mt-0 sm:mt-0 mt-20">
                 <motion.div
                     className="absolute whitespace-nowrap flex"
                     style={{ x: xPosition }}
@@ -120,13 +120,13 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                                                 duration: 0.3,
                                                 ease: 'easeInOut',
                                             }}
-                                            className="w-[28.125rem] h-[42.188rem] cursor-pointer relative"
+                                            className="xs:w-[20rem] sm:w-[20rem] w-[28.125rem] h-[42.188rem] cursor-pointer relative"
                                         >
                                             <Image
                                                 fill
                                                 className="w-full h-full absolute left-0 top-0 object-cover"
                                                 src={`/images/recents/${params.recentsId}/lookbook/${(index % 7) + 1}.jpg`}
-                                                alt={`Marquee ${index}`}
+                                                alt={`Marquee-Image-${index}`}
                                             />
                                         </motion.div>
                                     ))}
