@@ -12,7 +12,10 @@ const Page: React.FC = ({}) => {
             <Navigation activeSection="recents" />
             <div className="h-screen w-full flex justify-center items-center flex-col">
                 <Link href="/recents/academic-leave">
-                    <DisplayText color="text-black" className="mb-20">
+                    <DisplayText
+                        color="text-black"
+                        className="xs:mb-10 sm:mb-10 mb-20 text-center"
+                    >
                         <motion.span
                             whileHover={{
                                 color: '#BDBBBB',
@@ -21,7 +24,7 @@ const Page: React.FC = ({}) => {
                                 duration: 0.3,
                                 ease: 'easeInOut',
                             }}
-                            className="text-center mb-20 font-bold italic"
+                            className="mb-20 font-bold italic"
                         >
                             ACADEMIC LEAVE
                         </motion.span>
