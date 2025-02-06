@@ -84,3 +84,90 @@ export const shopItems = [
         media: ['/images/belt/1.jpg', '/images/belt/2.jpg'],
     },
 ]
+
+export const RecentsLookBook = {
+    'academic-leave': [
+        {
+            id: 'black-tank-top',
+            src: '/images/recents/academic-leave/lookbook/1.jpg',
+        },
+        {
+            id: 'black-tank-top',
+            src: '/images/recents/academic-leave/lookbook/2.jpg',
+        },
+        {
+            id: 'striped-longsleeve',
+            src: '/images/recents/academic-leave/lookbook/3.jpg',
+        },
+        {
+            id: 'striped-longsleeve',
+            src: '/images/recents/academic-leave/lookbook/4.jpg',
+        },
+        {
+            id: 'black-t-shirt',
+            src: '/images/recents/academic-leave/lookbook/5.jpg',
+        },
+        {
+            id: 'black-belt',
+            src: '/images/recents/academic-leave/lookbook/6.jpg',
+        },
+        {
+            id: 'black-belt',
+            src: '/images/recents/academic-leave/lookbook/7.jpg',
+        },
+        {
+            id: 'striped-longsleeve',
+            src: '/images/recents/academic-leave/lookbook/8.jpg',
+        },
+        {
+            id: 'black-sweatpants',
+            src: '/images/recents/academic-leave/lookbook/9.jpg',
+        },
+        {
+            id: 'striped-longsleeve',
+            src: '/images/recents/academic-leave/lookbook/10.jpg',
+        },
+        {
+            id: 'black-t-shirt',
+            src: '/images/recents/academic-leave/lookbook/11.jpg',
+        },
+        {
+            id: 'black-sweatpants',
+            src: '/images/recents/academic-leave/lookbook/12.jpg',
+        },
+    ],
+    uniform: [
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/1.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/2.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/3.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/4.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/5.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/6.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/7.jpg',
+        },
+        {
+            id: 'hoodie-wgu',
+            src: '/images/recents/uniform/lookbook/8.jpg',
+        },
+    ],
+}

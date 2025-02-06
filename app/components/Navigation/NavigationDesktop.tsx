@@ -37,10 +37,10 @@ const NavigationDesktop: React.FC<NavigationProps> = ({ activeSection }) => {
             }}
             variants={{
                 show: {
-                    y: '0% -100%',
+                    y: '0%',
                 },
                 hidden: {
-                    y: '-100%',
+                    y: activeSection === 'main' ? '0%' : '-100%',
                 },
             }}
             transition={{
@@ -48,7 +48,7 @@ const NavigationDesktop: React.FC<NavigationProps> = ({ activeSection }) => {
                 ease: cubicBezier(0.16, 1, 0.3, 1),
             }}
             animate={headerIsHidden ? 'hidden' : 'show'}
-            className={`z-20 top-0 grid left-0 w-full ${activeSection === 'about' ? '' : 'fixed'}`}
+            className={`z-20 top-0 grid left-0 w-full ${activeSection === 'about' ? '' : 'fixed'} mix-blend-difference text-white`}
         >
             <motion.div className="pl-10">
                 <Link href="/">
@@ -64,20 +64,17 @@ const NavigationDesktop: React.FC<NavigationProps> = ({ activeSection }) => {
                         >
                             <motion.span
                                 whileHover={{
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor: '#BDBBBB',
+                                    color: '#BDBBBB',
                                 }}
                                 transition={{
                                     duration: 0.3,
                                     ease: 'easeInOut',
                                 }}
                                 style={{
-                                    WebkitTextFillColor: '#FFFFFF',
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor:
+                                    color:
                                         activeSection === 'recents'
                                             ? '#BDBBBB'
-                                            : '#000000',
+                                            : '#FFFFFF',
                                 }}
                             >
                                 Recents
@@ -91,20 +88,17 @@ const NavigationDesktop: React.FC<NavigationProps> = ({ activeSection }) => {
                         >
                             <motion.span
                                 whileHover={{
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor: '#BDBBBB',
+                                    color: '#BDBBBB',
                                 }}
                                 transition={{
                                     duration: 0.3,
                                     ease: 'easeInOut',
                                 }}
                                 style={{
-                                    WebkitTextFillColor: '#FFFFFF',
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor:
+                                    color:
                                         activeSection === 'shop'
                                             ? '#BDBBBB'
-                                            : '#000000',
+                                            : '#FFFFFF',
                                 }}
                             >
                                 Shop
@@ -123,17 +117,14 @@ const NavigationDesktop: React.FC<NavigationProps> = ({ activeSection }) => {
                         >
                             <motion.span
                                 whileHover={{
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor: '#BDBBBB',
+                                    color: '#BDBBBB',
                                 }}
                                 transition={{
                                     duration: 0.3,
                                     ease: 'easeInOut',
                                 }}
                                 style={{
-                                    WebkitTextFillColor: '#FFFFFF',
-                                    WebkitTextStrokeWidth: '1px',
-                                    WebkitTextStrokeColor: '#000000',
+                                    color: '#FFFFFF',
                                 }}
                             >
                                 About

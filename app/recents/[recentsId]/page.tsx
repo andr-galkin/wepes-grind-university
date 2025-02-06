@@ -6,8 +6,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { formatString } from '../../../functions/formatString'
 import { IconList } from '../../components/Icons'
+import { RecentsLookBook } from '../../../mockData/mockData'
 
 let animationFrameId: number
+
+type LookBookKeys = keyof typeof RecentsLookBook
 
 const Page = ({ params }: { params: { recentsId: string } }) => {
     const Logo = IconList['Logo']
@@ -108,11 +111,14 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                         .fill(null)
                         .map((_, i) => (
                             <div className="flex" key={i} ref={containerRef}>
-                                {Array(7)
-                                    .fill(null)
-                                    .map((_, index) => (
+                                {RecentsLookBook[
+                                    params.recentsId as LookBookKeys
+                                ].map((item, index) => (
+                                    <Link
+                                        href={`/shop/${item.id}`}
+                                        key={item.id + index}
+                                    >
                                         <motion.div
-                                            key={index}
                                             whileHover={{
                                                 scale: 1.1,
                                             }}
@@ -125,11 +131,12 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                                             <Image
                                                 fill
                                                 className="w-full h-full absolute left-0 top-0 object-cover"
-                                                src={`/images/recents/${params.recentsId}/lookbook/${(index % 7) + 1}.jpg`}
+                                                src={item.src}
                                                 alt={`Marquee-Image-${index}`}
                                             />
                                         </motion.div>
-                                    ))}
+                                    </Link>
+                                ))}
                             </div>
                         ))}
                 </motion.div>

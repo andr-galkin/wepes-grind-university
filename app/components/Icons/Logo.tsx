@@ -14,7 +14,7 @@ const Logo: React.FC<IconComponent> = () => {
         >
             <g
                 transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
-                fill="#000000"
+                fill="#FFFFFF"
                 stroke="none"
             >
                 <path

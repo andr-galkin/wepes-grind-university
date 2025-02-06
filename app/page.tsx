@@ -95,10 +95,10 @@ export default function Home() {
                 {/*)}*/}
             </AnimatePresence>
 
-            <div className="absolute w-full h-full flex justify-center items-center ">
+            <div className="fixed w-full h-full flex justify-center items-center mix-blend-difference text-white">
                 <DisplayText
                     color="text-white"
-                    className={`${ballet.className} font-ballet mix-blend-difference`}
+                    className={`${ballet.className} font-ballet `}
                 >
                     <span
                         style={{
@@ -110,15 +110,25 @@ export default function Home() {
                     </span>
                 </DisplayText>
             </div>
-            <motion.div className="fixed left-0 w-full h-full -z-10">
-                <Image
-                    src="/images/main_img.jpg"
-                    alt="main"
-                    fill
-                    className="h-screen w-full object-fill"
-                />
-            </motion.div>
-            <div className="fixed left-4 bottom-4">
+            <div className="flex flex-col">
+                <div className="relative h-screen w-full -z-10">
+                    <Image
+                        src="/images/main_img.jpg"
+                        alt="main"
+                        fill
+                        className="object-fill"
+                    />
+                </div>
+                <div className="relative h-screen w-full -z-10">
+                    <Image
+                        src="/images/main_img_1.jpg"
+                        alt="main-1"
+                        fill
+                        className="object-fill"
+                    />
+                </div>
+            </div>
+            <div className="fixed left-4 bottom-4 mix-blend-difference text-white">
                 <BodyText size="small">
                     Music - Plaisir Douteux - Mitsubishi Eclipse, 2024
                 </BodyText>

@@ -12,7 +12,7 @@ interface BodyTextProps {
 
 const BodyText = ({
     children,
-    color = 'text-black-100',
+    color = 'text-white',
     className,
     size,
 }: BodyTextProps) => {
