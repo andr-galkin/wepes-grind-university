@@ -78,7 +78,7 @@ export default function Home() {
                 variants={{
                     show: {
                         backdropFilter: 'blur(40px)',
-                        backgroundColor: 'rgba(255,255,255,0.5)',
+                        backgroundColor: 'rgba(255,255,255)',
                     },
                     hidden: {
                         backdropFilter: 'blur(0px)',

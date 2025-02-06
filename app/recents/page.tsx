@@ -10,11 +10,11 @@ const Page: React.FC = ({}) => {
     return (
         <div>
             <Navigation activeSection="recents" />
-            <div className="h-screen w-full flex justify-center items-center flex-col">
+            <div className="h-screen w-full flex justify-center items-center flex-col xs:mt-0 sm:mt-0 mt-20">
                 <Link href="/recents/academic-leave">
                     <DisplayText
                         color="text-black"
-                        className="xs:mb-10 sm:mb-10 mb-20 text-center"
+                        className="mb-10 text-center"
                     >
                         <motion.span
                             whileHover={{
@@ -24,14 +24,14 @@ const Page: React.FC = ({}) => {
                                 duration: 0.3,
                                 ease: 'easeInOut',
                             }}
-                            className="mb-20 font-bold italic"
+                            className="font-bold italic"
                         >
                             ACADEMIC LEAVE
                         </motion.span>
                     </DisplayText>
                 </Link>
                 <Link href="/recents/uniform">
-                    <DisplayText color="text-black" className="mb-20">
+                    <DisplayText color="text-black">
                         <motion.span
                             whileHover={{
                                 color: '#BDBBBB',
@@ -40,7 +40,7 @@ const Page: React.FC = ({}) => {
                                 duration: 0.3,
                                 ease: 'easeInOut',
                             }}
-                            className="text-center mb-20 font-bold italic"
+                            className="text-center font-bold italic"
                         >
                             UNIFORM
                         </motion.span>

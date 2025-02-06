@@ -28,13 +28,6 @@ const Page = ({ params }: { params: { itemId: string } }) => {
                 <div className="grid grid-cols-25/100/25 xs:grid-cols-1 sm:grid-cols-1">
                     <div className="flex flex-col items-start justify-center xs:order-4 sm:order-4">
                         <BodyText
-                            className="mb-5 font-bold italic"
-                            size="medium"
-                            color="text-black"
-                        >
-                            Description
-                        </BodyText>
-                        <BodyText
                             size="small"
                             color="text-black"
                             className="whitespace-break-spaces italic"
