@@ -25,14 +25,9 @@ const NavigationMobile: React.FC<NavigationProps> = ({ activeSection }) => {
     }, [menuIsOpen])
 
     return (
-        <motion.div className={`z-20 top-0 grid left-0 w-full fixed`}>
-            <motion.div className="pl-7 z-20">
-                <Link href="/">
-                    <Logo />
-                </Link>
-            </motion.div>
+        <>
             <div
-                className="fixed right-7 z-20 top-14 cursor-pointer"
+                className="fixed right-7 z-30 top-14 cursor-pointer"
                 onClick={menuHandler}
             >
                 <Hamburger
@@ -57,7 +52,7 @@ const NavigationMobile: React.FC<NavigationProps> = ({ activeSection }) => {
                     duration: '0.8',
                     ease: cubicBezier(0.16, 1, 0.3, 1),
                 }}
-                className="w-full h-screen bg-white fixed top-0 left-0"
+                className="w-full h-screen bg-white fixed top-0 left-0 z-20"
             >
                 <div className="flex flex-col h-full justify-evenly items-center pt-24">
                     <Link href="/recents">
@@ -166,7 +161,16 @@ const NavigationMobile: React.FC<NavigationProps> = ({ activeSection }) => {
                     </div>
                 </div>
             </motion.div>
-        </motion.div>
+            <motion.div
+                className={`z-20 top-0 grid left-0 w-full fixed mix-blend-difference`}
+            >
+                <motion.div className="pl-7 z-20">
+                    <Link href="/">
+                        <Logo />
+                    </Link>
+                </motion.div>
+            </motion.div>
+        </>
     )
 }
 
