@@ -56,7 +56,7 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
 
     return (
         <div>
-            <motion.div className="flex justify-center w-full pt-10">
+            <motion.div className="flex justify-center w-full pt-10 mix-blend-difference">
                 <Link href="/">
                     <Logo />
                 </Link>
