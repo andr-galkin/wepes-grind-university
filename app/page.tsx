@@ -121,7 +121,7 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
                 >
-                    <div className="fixed w-full h-full flex justify-center items-center mix-blend-difference text-white">
+                    <div className="fixed w-full h-[100svh] flex justify-center items-center mix-blend-difference text-white">
                         <Link href="/recents/academic-leave">
                             <DisplayText
                                 color="text-white"
