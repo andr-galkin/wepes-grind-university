@@ -2,28 +2,12 @@
 
 import React from 'react'
 import { IconComponent } from './index'
-import { cubicBezier, motion } from 'framer-motion'
 
-const AnimatedLogo: React.FC<IconComponent> = ({ onComplete }) => {
+const AnimatedLogo: React.FC<IconComponent> = () => {
     return (
-        <motion.svg
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-            }}
-            onAnimationComplete={() => {
-                if (onComplete) {
-                    onComplete()
-                }
-            }}
-            transition={{
-                duration: 2,
-                ease: cubicBezier(0.16, 1, 0.3, 1),
-            }}
+        <svg
             version="1.0"
-            className="w-screen h-screen"
+            className="w-[245px] h-[245px] xs:w-44 xs:h-44 sm:w-44 sm:h-44"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640.000000 640.000000"
             preserveAspectRatio="xMidYMid meet"
@@ -126,7 +110,7 @@ c-220 228 -377 458 -510 744 -34 73 -40 94 -27 88 10 -4 47 -16 83 -26z m321
 -17 -14 5 -134 141 -201 228 -102 130 -244 361 -231 374 17 17 36 -4 93 -99z"
                 />
             </g>
-        </motion.svg>
+        </svg>
     )
 }
 

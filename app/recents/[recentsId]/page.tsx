@@ -62,10 +62,10 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                 </Link>
             </motion.div>
             <div className="flex w-full px-10 justify-between xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-10 sm:mt-10">
-                <div className="xs:border-b-2 sm:border-b-2 border-wgu-grey xs:pb-3 sm:pb-3">
+                <div className="xs:pb-6 sm:pb-6">
                     <h2 className="italic font-bold">{title}</h2>
                 </div>
-                <div className="flex xs:pt-3 sm:pt-3">
+                <div className="flex xs:p-3 sm:p-3 xs:border-4 sm:border-4 border-wgu-grey">
                     <Link href={`/recents/${params.recentsId}/promo`}>
                         <motion.h2
                             whileHover={{
@@ -75,7 +75,7 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                                 duration: 0.3,
                                 ease: 'easeInOut',
                             }}
-                            className="italic text-black font-bold"
+                            className="italic text-black font-bold uppercase"
                         >
                             Promo
                         </motion.h2>
@@ -93,7 +93,7 @@ const Page = ({ params }: { params: { recentsId: string } }) => {
                                 duration: 0.3,
                                 ease: 'easeInOut',
                             }}
-                            className={`italic font-bold text-wgu-grey`}
+                            className={`italic font-bold text-wgu-grey uppercase`}
                         >
                             Video
                         </motion.h2>

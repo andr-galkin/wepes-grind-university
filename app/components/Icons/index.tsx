@@ -9,7 +9,6 @@ import AnimatedLogo from './AnimatedLogo'
 export interface IconComponent {
     color?: string
     fill?: string
-    onComplete?: () => void
 }
 
 export const EmptyIcon: React.FC<IconComponent> = () => null
